@@ -34,283 +34,278 @@ export default function PortfolioGallery() {
   }, [selectedCategory]);
 
   // Portfolio items - replace with actual event photos
-  const portfolioItems: PortfolioItem[] = [
-    {
-      id: 1,
-      title: "44th Annual function",
-      category: "Conferences",
-      imageUrl: "/images/events/1.png",
-      description: "Inclusive growth of indian ACE industry ",
-      client: "CEAMA",
-      attendees: "500+",
-      year: "2025"
-    },
-    {
-      id: 2,
-      title: "Kotak",
-      category: "Conferences",
-      imageUrl: "/images/events/4.png",
-      description: " Kotak Annual Leadership Summit 2025",
-      client: "Tech Industry Council",
-      attendees: "700+",
-      year: "2025"
-    },
-    {
-      id: 3,
-      title: "Annual Business Conference",
-      category: "Conferences",
-      imageUrl: "/images/events/3.png",
-      description: "Annual business conference with keynote speakers and panel discussions",
-      client: "ROCA",
-      attendees: "300+",
-      year: "2025"
-    },
-    {
-      id: 4,
-      title: "Asian Petrochemical Industry Conference",
-      category: "Corporate",
-      imageUrl: "/images/events/2.png",
-      description: "High-profile product launch with media coverage",
-      client: "APIC",
-      attendees: "550+",
-      year: "2023"
-    },
-    {
-      id: 5,
-      title: "Kotak Annual Meet",
-      category: "Associations",
-      imageUrl: "/images/events/5.png",
-      description: "Annual General Meeting with networking dinner",
-      client: "KOTAK",
-      attendees: "400+",
-      year: "2025"
-    },
-    {
-      id: 6,
-      title: "Asian Petrochemical Industry Conference",
-      category: "Corporate",
-      imageUrl: "/images/events/6.png",
-      description: "High-profile product launch with media coverage",
-      client: "APIC",
-      attendees: "400+",
-      year: "2023"
-    },
-    {
-      id: 7,
-      title: "Kotak CFO COLLOQUIUM",
-      category: "Conferences",
-      imageUrl: "/images/events/7.png",
-      description: "Exclusive CFO colloquium with industry leaders and financial experts",
-      client: "kotak",
-      attendees: "600+",
-      year: "2025"
-    },
-    {
-      id: 8,
-      title: "Sleepwell Exhibition",
-      category: "Exhibitions",
-      imageUrl: "/images/events/8.png",
-      description: "Major exhibition showcasing latest sleep technology and products",
-      client: "Sleepwell",
-      attendees: "500+",
-      year: "2025"
-    },
-    {
-      id: 9,
-      title: "54th BATHAK Meeting",
-      category: "Associations",
-      imageUrl: "/images/events/9.png",
-      description: "Annual meeting of the BATHAK association with workshops and networking sessions",
-      client: "DB power ltd",
-      attendees: "300+",
-      year: "2024"
-    },
-    {
-      id: 10,
-      title: "15th APFCB",
-      category: "Conferences",
-      imageUrl: "/images/events/10.png",
-      description: "Asia-Pacific Federation For Clinical Biochemistry and Laboratory Medicine Congress",
-      client: "APFCB",
-      attendees: "800+",
-      year: "2019"
-    },
-    {
-      id: 11,
-      title: "Indian investment summit and awards 2024",
-      category: "Conferences",
-      imageUrl: "/images/events/11.png",
-      description: "High-profile investment summit with keynote speakers and award ceremony",
-      client: "Trilegal",
-      attendees: "700+",
-      year: "2024"
-    },
-
-    {
-      id: 12,
-      title: "Haryana Real Estate Summit 2022 & Buyer Meet",
-      category: "Government",
-      imageUrl: "/images/events/12.png",
-      description: "Haryana Real Estate Summit 2022 and Buyer Meet with industry leaders, developers, and investors.",
-      client: "NAREDCO",
-      attendees: "900+",
-      year: "2022"
-    },
-    {
-      id: 13,
-      title: "Akhil Bharat Siksha Samagam 2020",
-      category: "Government",
-      imageUrl: "/images/events/13.png",
-      description: " National education conference with workshops, keynote speakers, and student engagement activities",
-      client: "HRD ministry",
-      attendees: "900+",
-      year: "2025"
-    },
-    {
-      id: 15,
-      title: "Rising Star Awards 2025",
-      category: "Government",
-      imageUrl: "/images/events/15.jpeg",
-      description: "Prestigious Rising Star Awards recognizing outstanding achievements, featuring keynote speakers, media coverage, and high-profile attendees.",
-      client: "Aaj Tak",
-      attendees: "900+",
-      year: "2025"
-    },
-    {
-      id: 16,
-      title: "Kotak Mutual Fund Summit 2025",
-      category: "Corporate",
-      imageUrl: "/images/events/16.jpeg",
-      description: "Kotak Mutual Fund Summit 2025 featuring financial experts, investment strategies, and insights for investors and industry leaders.",
-      client: "Kotak Mutual Fund",
-      attendees: "900+",
-      year: "2025"
-    },
-
-    {
-      id: 19,
-      title: "Marriott Exchange 2025",
-      category: "Corporate",
-      imageUrl: "/images/events/19.jpeg",
-      description: "Marriott Exchange 2025, a corporate networking and hospitality event featuring industry leaders, business discussions, and premium guest experiences.",
-      client: "Marriott",
-      attendees: "900+",
-      year: "2025"
-    },
-    {
-      id: 20,
-      title: "GI Surgicon 2019",
-      category: "Conferences",
-      imageUrl: "/images/events/20.jpeg",
-      description: "GI Surgicon 2019, a leading medical conference focused on gastrointestinal surgery, featuring expert sessions, case discussions, and hands-on workshops.",
-      client: "Fortis",
-      attendees: "900+",
-      year: "2019"
-    },
-    {
-      id: 21,
-      title: "Ophtha Quest 2018",
-      category: "Conferences",
-      imageUrl: "/images/events/21.jpeg",
-      description: "Ophtha Quest 2018, a specialized ophthalmology conference featuring expert sessions, surgical insights, and advancements in eye care.",
-      client: "Haryana Ophthalmological Society",
-      attendees: "900+",
-      year: "2018"
-    },
-    {
-      id: 22,
-      title: "13th Annual Conference of Venue Association of India (VAICON 2020)",
-      category: "Conferences",
-      imageUrl: "/images/events/22.jpeg",
-      description: "VAICON 2020, the 13th Annual Conference of the Venue Association of India, bringing together industry leaders for networking, knowledge sharing, and discussions on venue management and event infrastructure.",
-      client: "Venue Association of India",
-      attendees: "900+",
-      year: "2020"
-    },
-    {
-      id: 23,
-      title: "LG Corporate Event 2025",
-      category: "Corporate",
-      imageUrl: "/images/events/23.jpeg",
-      description: "LG Corporate Event 2025 featuring product showcases, business discussions, and engagement with industry partners and stakeholders.",
-      client: "LG",
-      attendees: "900+",
-      year: "2025"
-    },
-    {
-      id: 24,
-      title: "waspalm2025",
-      category: "Government",
-      imageUrl: "/images/events/24.jpeg",
-      description: " National education conference with workshops, keynote speakers, and student engagement activities",
-      client: "Association of Clinical Biochemists of India",
-      attendees: "900+",
-      year: "2025"
-    },
-    {
-      id: 26,
-      title: "15th APFCB Conference 2019",
-      category: "Conferences",
-      imageUrl: "/images/events/26.jpeg",
-      description: "15th APFCB Conference 2019, a prestigious international congress in clinical biochemistry and laboratory medicine, featuring global experts, research presentations, and scientific sessions.",
-      client: "IFCC / APFCB",
-      attendees: "900+",
-      year: "2019"
-    },
-    {
-      id: 27,
-      title: "National Rubber Conference 2019",
-      category: "Conferences",
-      imageUrl: "/images/events/27.jpeg",
-      description: "National Rubber Conference 2019 bringing together industry experts, manufacturers, and researchers to discuss innovations, trends, and advancements in the rubber industry.",
-      client: "All India Rubber Industries Association",
-      attendees: "900+",
-      year: "2019"
-    },
-    {
-      id: 28,
-      title: "Broncocon 2019",
-      category: "Conferences",
-      imageUrl: "/images/events/28.jpeg",
-      description: "Broncocon 2019, a specialized medical conference focused on respiratory and pulmonary medicine, featuring expert sessions, case discussions, and latest advancements in chest care.",
-      client: "Medical Association",
-      attendees: "900+",
-      year: "2019"
-    },
-    {
-      id: 29,
-      title: "WASOG 2024",
-      category: "Conferences",
-      imageUrl: "/images/events/29.jpeg",
-      description: "WASOG 2024, an international conference focused on interstitial lung diseases and respiratory medicine, featuring global experts, research discussions, and clinical advancements.",
-      client: "WASOG",
-      attendees: "900+",
-      year: "2024"
-    },
-    {
-      id: 30,
-      title: "Kotak Mutual Fund & You 2025",
-      category: "Corporate",
-      imageUrl: "/images/events/30.jpeg",
-      description: "Kotak Mutual Fund & You 2025, an investor-focused event featuring financial insights, wealth management strategies, and engagement with industry experts.",
-      client: "Kotak Mutual Fund",
-      attendees: "900+",
-      year: "2025"
-    },
-    {
-      id: 32,
-      title: "ucon 2020",
-      category: "Government",
-      imageUrl: "/images/events/32.jpeg",
-      description: " National education conference with workshops, keynote speakers, and student engagement activities",
-      client: "HRD ministry",
-      attendees: "900+",
-      year: "2025"
-    },
-
-
-
-  ];
+ const portfolioItems: PortfolioItem[] = [
+  {
+    id: 1,
+    title: "44th Annual Function",
+    category: "Conferences",
+    imageUrl: "/images/events/1.png",
+    description: "Flagship industry gathering focused on the inclusive growth of India’s ACE sector, featuring policy leaders and business visionaries.",
+    client: "CEAMA",
+    attendees: "450+ Delegates",
+    year: "2025"
+  },
+  {
+    id: 2,
+    title: "Kotak Annual Leadership Summit",
+    category: "Conferences",
+    imageUrl: "/images/events/4.png",
+    description: "High-impact leadership summit bringing together senior executives for strategic insights, networking, and future-focused discussions.",
+    client: "Kotak",
+    attendees: "650+ Leaders",
+    year: "2025"
+  },
+  {
+    id: 3,
+    title: "Annual Business Conference",
+    category: "Conferences",
+    imageUrl: "/images/events/3.png",
+    description: "Curated business conference featuring keynote sessions, panel discussions, and networking opportunities for industry professionals.",
+    client: "ROCA",
+    attendees: "320+ Attendees",
+    year: "2025"
+  },
+  {
+    id: 4,
+    title: "Asian Petrochemical Industry Conference",
+    category: "Corporate",
+    imageUrl: "/images/events/2.png",
+    description: "Prestigious industry conference with global stakeholders, focusing on innovation, market trends, and strategic collaborations.",
+    client: "APIC",
+    attendees: "520+ Delegates",
+    year: "2023"
+  },
+  {
+    id: 5,
+    title: "Kotak Annual Meet",
+    category: "Associations",
+    imageUrl: "/images/events/5.png",
+    description: "Annual corporate gathering featuring stakeholder engagement sessions followed by an exclusive networking dinner experience.",
+    client: "Kotak",
+    attendees: "380 Attendees",
+    year: "2025"
+  },
+  {
+    id: 6,
+    title: "Asian Petrochemical Industry Conference",
+    category: "Corporate",
+    imageUrl: "/images/events/6.png",
+    description: "Industry-leading conference delivering impactful discussions and high-level networking among petrochemical leaders.",
+    client: "APIC",
+    attendees: "420+ Delegates",
+    year: "2023"
+  },
+  {
+    id: 7,
+    title: "Kotak CFO Colloquium",
+    category: "Conferences",
+    imageUrl: "/images/events/7.png",
+    description: "Exclusive closed-door colloquium designed for CFOs, featuring expert-led discussions on financial strategy and market outlook.",
+    client: "Kotak",
+    attendees: "550+ Executives",
+    year: "2025"
+  },
+  {
+    id: 8,
+    title: "Sleepwell Exhibition",
+    category: "Exhibitions",
+    imageUrl: "/images/events/8.png",
+    description: "Large-scale product exhibition showcasing innovative sleep solutions with immersive brand experiences and live demos.",
+    client: "Sleepwell",
+    attendees: "600+ Visitors",
+    year: "2025"
+  },
+  {
+    id: 9,
+    title: "54th BATHAK Meeting",
+    category: "Associations",
+    imageUrl: "/images/events/9.png",
+    description: "Strategic association meeting combining knowledge sessions, workshops, and member networking initiatives.",
+    client: "DB Power Ltd",
+    attendees: "280+ Members",
+    year: "2024"
+  },
+  {
+    id: 10,
+    title: "15th APFCB Congress",
+    category: "Conferences",
+    imageUrl: "/images/events/10.png",
+    description: "International medical congress featuring global experts, research presentations, and advanced scientific discussions.",
+    client: "APFCB",
+    attendees: "1200+ Participants",
+    year: "2019"
+  },
+  {
+    id: 11,
+    title: "Indian Investment Summit & Awards",
+    category: "Conferences",
+    imageUrl: "/images/events/11.png",
+    description: "Premium investment summit combined with an awards ceremony, bringing together top investors and industry leaders.",
+    client: "Trilegal",
+    attendees: "750+ Attendees",
+    year: "2024"
+  },
+  {
+    id: 12,
+    title: "Haryana Real Estate Summit & Buyer Meet",
+    category: "Government",
+    imageUrl: "/images/events/12.png",
+    description: "Flagship government-backed summit connecting developers, investors, and policymakers in the real estate ecosystem.",
+    client: "NAREDCO",
+    attendees: "1400+ Participants",
+    year: "2022"
+  },
+  {
+    id: 13,
+    title: "Akhil Bharat Siksha Samagam",
+    category: "Government",
+    imageUrl: "/images/events/13.png",
+    description: "National education summit featuring policymakers, educators, and large-scale student engagement initiatives.",
+    client: "Ministry of Education",
+    attendees: "1100+ Attendees",
+    year: "2025"
+  },
+  {
+    id: 15,
+    title: "Rising Star Awards",
+    category: "Government",
+    imageUrl: "/images/events/15.jpeg",
+    description: "High-profile awards night celebrating excellence, featuring celebrity appearances, media coverage, and premium production.",
+    client: "Aaj Tak",
+    attendees: "800+ Guests",
+    year: "2025"
+  },
+  {
+    id: 16,
+    title: "Kotak Mutual Fund Summit",
+    category: "Corporate",
+    imageUrl: "/images/events/16.jpeg",
+    description: "Investor-focused summit delivering insights on wealth strategies, financial planning, and market trends.",
+    client: "Kotak Mutual Fund",
+    attendees: "700+ Investors",
+    year: "2025"
+  },
+  {
+    id: 19,
+    title: "Marriott Exchange",
+    category: "Corporate",
+    imageUrl: "/images/events/19.jpeg",
+    description: "Premium hospitality networking event designed for industry leaders and high-value corporate engagements.",
+    client: "Marriott",
+    attendees: "650+ Guests",
+    year: "2025"
+  },
+  {
+    id: 20,
+    title: "GI Surgicon",
+    category: "Conferences",
+    imageUrl: "/images/events/20.jpeg",
+    description: "Leading medical conference focused on gastrointestinal surgery with live case discussions and expert sessions.",
+    client: "Fortis",
+    attendees: "900+ Doctors",
+    year: "2019"
+  },
+  {
+    id: 21,
+    title: "Ophtha Quest",
+    category: "Conferences",
+    imageUrl: "/images/events/21.jpeg",
+    description: "Specialized ophthalmology conference highlighting innovations, surgical advancements, and clinical practices.",
+    client: "Haryana Ophthalmological Society",
+    attendees: "600+ Specialists",
+    year: "2018"
+  },
+  {
+    id: 22,
+    title: "VAICON Conference",
+    category: "Conferences",
+    imageUrl: "/images/events/22.jpeg",
+    description: "Annual venue industry conference fostering collaboration, networking, and knowledge exchange.",
+    client: "Venue Association of India",
+    attendees: "500+ Professionals",
+    year: "2020"
+  },
+  {
+    id: 23,
+    title: "LG Corporate Event",
+    category: "Corporate",
+    imageUrl: "/images/events/23.jpeg",
+    description: "Corporate showcase event featuring product launches, partner engagement, and business networking.",
+    client: "LG",
+    attendees: "750+ Attendees",
+    year: "2025"
+  },
+  {
+    id: 24,
+    title: "WASPALM Conference",
+    category: "Government",
+    imageUrl: "/images/events/24.jpeg",
+    description: "Large-scale scientific and academic conference bringing together researchers and professionals nationwide.",
+    client: "Association of Clinical Biochemists of India",
+    attendees: "1300+ Delegates",
+    year: "2025"
+  },
+  {
+    id: 26,
+    title: "APFCB International Conference",
+    category: "Conferences",
+    imageUrl: "/images/events/26.jpeg",
+    description: "Globally recognized congress featuring international experts, cutting-edge research, and scientific sessions.",
+    client: "IFCC / APFCB",
+    attendees: "1500+ Participants",
+    year: "2019"
+  },
+  {
+    id: 27,
+    title: "National Rubber Conference",
+    category: "Conferences",
+    imageUrl: "/images/events/27.jpeg",
+    description: "Industry-focused conference exploring innovation, manufacturing trends, and future technologies in rubber.",
+    client: "All India Rubber Industries Association",
+    attendees: "850+ Attendees",
+    year: "2019"
+  },
+  {
+    id: 28,
+    title: "Broncocon",
+    category: "Conferences",
+    imageUrl: "/images/events/28.jpeg",
+    description: "Specialized pulmonary conference featuring expert-led sessions and advancements in respiratory care.",
+    client: "Medical Association",
+    attendees: "700+ Doctors",
+    year: "2019"
+  },
+  {
+    id: 29,
+    title: "WASOG Conference",
+    category: "Conferences",
+    imageUrl: "/images/events/29.jpeg",
+    description: "International conference on interstitial lung diseases with global participation and research exchange.",
+    client: "WASOG",
+    attendees: "950+ Delegates",
+    year: "2024"
+  },
+  {
+    id: 30,
+    title: "Kotak Mutual Fund & You",
+    category: "Corporate",
+    imageUrl: "/images/events/30.jpeg",
+    description: "Investor engagement event delivering personalized financial insights and wealth-building strategies.",
+    client: "Kotak Mutual Fund",
+    attendees: "650+ Investors",
+    year: "2025"
+  },
+  {
+    id: 32,
+    title: "UCON Conference",
+    category: "Government",
+    imageUrl: "/images/events/32.jpeg",
+    description: "Government-led national conference focused on education, innovation, and large-scale participation.",
+    client: "Ministry of Education",
+    attendees: "1000+ Participants",
+    year: "2025"
+  }
+];
 
   const categories: Category[] = ["All", "Conferences", "Exhibitions", "Corporate", "Associations", "Government"];
 
