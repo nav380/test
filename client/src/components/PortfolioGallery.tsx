@@ -145,16 +145,7 @@ export default function PortfolioGallery() {
     attendees: "750+ Attendees",
     year: "2024"
   },
-  {
-    id: 12,
-    title: "Haryana Real Estate Summit & Buyer Meet",
-    category: "Government",
-    imageUrl: "/images/events/12.png",
-    description: "Flagship government-backed summit connecting developers, investors, and policymakers in the real estate ecosystem.",
-    client: "NAREDCO",
-    attendees: "1400+ Participants",
-    year: "2022"
-  },
+  
   {
     id: 13,
     title: "Akhil Bharat Siksha Samagam",
