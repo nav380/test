@@ -135,16 +135,6 @@ export default function PortfolioGallery() {
     attendees: "1200+ Participants",
     year: "2019"
   },
-  {
-    id: 11,
-    title: "Indian Investment Summit & Awards",
-    category: "Conferences",
-    imageUrl: "/images/events/11.png",
-    description: "Premium investment summit combined with an awards ceremony, bringing together top investors and industry leaders.",
-    client: "Trilegal",
-    attendees: "750+ Attendees",
-    year: "2024"
-  },
   
   
   {
