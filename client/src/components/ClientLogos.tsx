@@ -39,6 +39,9 @@ export default function ClientLogos() {
     { name: "Broadcast", logo: "/images/sponsors/28.png" },
     { name: "Tifr", logo: "/images/sponsors/29.png" },
     { name: "Nyk group", logo: "/images/sponsors/30.png" },
+  {name:"IBJA" ,logo:"/images/sponsors/31.png"},
+  {name:"DNB" ,logo:"/images/sponsors/32.png"},
+
     
 
   ];
@@ -60,7 +63,7 @@ export default function ClientLogos() {
         </div>
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-10 gap-8">
+        <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-8">
           {clients.map((client, index) => (
             <div
               key={index}

@@ -7,14 +7,7 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const testimonials = [
-  {
-    name: "Mr. Kinjal Shah",
-    role: "Chief Marketing Officer (CMO)",
-    company: "Kotak Mutual Fund",
-    content:
-      "MIKE Events transformed our annual medical conference into an unforgettable experience. Their attention to detail and seamless coordination made our 1000+ attendee event run flawlessly. Highly recommended!",
-    rating: 5,
-  },
+  
   {
     name: "Dr. Shoaib Padaria",
     role: "Head of Department (HOD)",
@@ -33,7 +26,7 @@ const testimonials = [
   },
   {
     name: "Niket Mehra",
-    role: "",
+    role: "Senior Project Manager",
     company: "DNB",
     content:
       "MIKE Events handled our international conference in Delhi with exceptional professionalism. From speaker coordination to delegate management, everything was perfect. They made magic happen!",
@@ -41,7 +34,7 @@ const testimonials = [
   },
   {
     name: "Savio",
-    role: "",
+    role: "Head Projects- Conferences",
     company: "DNB",
     content:
       "MIKE Events handled our international conference in Delhi with exceptional professionalism. From speaker coordination to delegate management, everything was perfect. They made magic happen!",
