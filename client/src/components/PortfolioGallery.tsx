@@ -117,7 +117,7 @@ export default function PortfolioGallery() {
   },
   {
     id: 9,
-    title: "54th BATHAK Meeting",
+    title: "54th BAITHAK Meeting",
     category: "Associations",
     imageUrl: "/images/events/9.png",
     description: "Strategic association meeting combining knowledge sessions, workshops, and member networking initiatives.",
@@ -146,16 +146,7 @@ export default function PortfolioGallery() {
     year: "2024"
   },
   
-  {
-    id: 13,
-    title: "Akhil Bharat Siksha Samagam",
-    category: "Government",
-    imageUrl: "/images/events/13.png",
-    description: "National education summit featuring policymakers, educators, and large-scale student engagement initiatives.",
-    client: "Ministry of Education",
-    attendees: "1100+ Attendees",
-    year: "2025"
-  },
+  
   {
     id: 15,
     title: "Rising Star Awards",

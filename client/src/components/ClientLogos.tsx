@@ -41,6 +41,11 @@ export default function ClientLogos() {
     { name: "Nyk group", logo: "/images/sponsors/30.png" },
   {name:"IBJA" ,logo:"/images/sponsors/31.png"},
   {name:"DNB" ,logo:"/images/sponsors/32.png"},
+  {name:"AIRA" ,logo:"/images/sponsors/34.png"},
+  {name:"COLLECTIVE ARTISTS" ,logo:"/images/sponsors/35.png"},
+  {name:"TVS" ,logo:"/images/sponsors/36.png"},
+  {name:"LUPIN" ,logo:"/images/sponsors/37.png"},
+
 
     
 
