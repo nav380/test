@@ -86,10 +86,7 @@ export default function ClientLogos() {
               </div>
 
               {/* Tooltip on hover */}
-              <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-[#e8e8e8] text-[#1a0000] text-xs px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-                {client.name}
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-2 h-2 bg-[#e8e8e8]" />
-              </div>
+              
             </div>
           ))}
         </div>
