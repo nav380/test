@@ -48,7 +48,7 @@ const partners = [
   
   { name: "DND", logo: "/images/sponsors/32.png" },
   { name: "SENNHEISHER", logo: "/images/sponsors/38.png" },
-  { name: "CHEMA", logo: "/images/sponsors/39.png" },
+  { name: "CHEMA", logo: "/images/sponsors/26.png" },
   { name: "HOME CREDIT", logo: "/images/sponsors/8.png" },
   { name: "DELHI MEDIAL ASSOCIATION", logo: "/images/sponsors/4.png" },
 ];
