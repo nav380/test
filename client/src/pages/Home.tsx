@@ -573,7 +573,7 @@ export default function Home() {
               </div>
               <p className="text-sm leading-relaxed" style={{ color: "#9ca3af" }}>
                 India's premier MICE &amp; event management company delivering extraordinary
-                experiences since 2019.
+                experiences since 2015.
               </p>
             </div>
 
