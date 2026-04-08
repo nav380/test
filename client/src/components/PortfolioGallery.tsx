@@ -259,7 +259,7 @@ export default function PortfolioGallery() {
   },
   {
     id: 30,
-    title: "Kotak Mutual Fund & You",
+    title: "Kotak Mutual Fund You & I",
     category: "Corporate",
     imageUrl: "/images/events/30.jpeg",
     description: "Investor engagement event delivering personalized financial insights and wealth-building strategies.",
@@ -269,7 +269,7 @@ export default function PortfolioGallery() {
   },
   {
     id: 32,
-    title: "UCON Conference",
+    title: "Spine Surgery Conference",
     category: "Government",
     imageUrl: "/images/events/32.jpeg",
     description: "Government-led national conference focused on education, innovation, and large-scale participation.",
