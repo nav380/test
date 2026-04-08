@@ -1,17 +1,49 @@
-/**
- * Mobile Menu Component
- * Design Philosophy: Neo-Brutalism with Warmth
- * Features: Full-screen overlay navigation for mobile devices
- */
+"use client";
 
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, MessageCircle } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  // 🔥 SCROLL → THEN OPEN MENU
+  const toggleMenu = () => {
+    if (!isOpen) {
+      if (window.scrollY > 0) {
+        const onScroll = () => {
+          if (window.scrollY === 0) {
+            setIsOpen(true);
+            window.removeEventListener("scroll", onScroll);
+          }
+        };
+
+        window.addEventListener("scroll", onScroll);
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        setIsOpen(true);
+      }
+    } else {
+      setIsOpen(false);
+    }
+  };
+
+  // ✅ LOCK BODY SCROLL
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
 
   const menuItems = [
     { label: "Services", href: "#services" },
@@ -19,7 +51,7 @@ export default function MobileMenu() {
     { label: "Why Us", href: "#why-us" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" }
+    { label: "Contact", href: "#contact" },
   ];
 
   const handleLinkClick = () => {
@@ -28,10 +60,10 @@ export default function MobileMenu() {
 
   return (
     <>
-      {/* Mobile Menu Button */}
+      {/* 🔥 BUTTON */}
       <button
         onClick={toggleMenu}
-        className="md:hidden w-10 h-10 border-2 border-[#e8e8e8] bg-[#a20504] flex items-center justify-center transition-all duration-300"
+        className="md:hidden w-10 h-10 border-2 border-[#e8e8e8] bg-[#a20504] flex items-center justify-center z-[100]"
         aria-label="Toggle menu"
       >
         {isOpen ? (
@@ -41,10 +73,14 @@ export default function MobileMenu() {
         )}
       </button>
 
-      {/* Full-Screen Overlay Menu */}
+      {/* 🔥 MENU */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-[#f8f8f8] md:hidden">
-          <div className="container mx-auto px-4 py-4">
+        <div
+          className="fixed inset-0 z-[9999] md:hidden overflow-y-auto transition-opacity duration-300"
+          style={{ backgroundColor: "#f8f8f8" }}
+        >
+          <div className="container mx-auto px-4 py-4 min-h-screen">
+            
             {/* Header */}
             <div className="flex items-center justify-between mb-12">
               <div className="flex items-center space-x-2">
@@ -52,93 +88,91 @@ export default function MobileMenu() {
                   <span className="text-[#1a0000] font-bold text-xl">M</span>
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-[#1a0000] leading-none">MIKE</h1>
+                  <h1 className="text-xl font-bold text-[#1a0000] leading-none">
+                    MIKE
+                  </h1>
                   <p className="text-xs text-[#6b6b6b]">Events India</p>
                 </div>
               </div>
-              
+
               <button
                 onClick={toggleMenu}
                 className="w-10 h-10 border-2 border-[#e8e8e8] bg-[#a20504] flex items-center justify-center"
-                aria-label="Close menu"
               >
                 <X className="w-6 h-6 text-[#1a0000]" />
               </button>
             </div>
 
-            {/* Navigation Links */}
+            {/* Nav */}
             <nav className="space-y-4 mb-12">
               {menuItems.map((item, index) => (
                 <a
                   key={index}
                   href={item.href}
                   onClick={handleLinkClick}
-                  className="block text-2xl font-bold text-[#1a0000] hover:text-[#a20504] transition-colors py-3 border-b-2 border-[#e8e8e8]/20"
+                  className="block text-2xl font-bold text-[#1a0000] hover:text-[#a20504] py-3 border-b-2 border-[#e8e8e8]/20"
                 >
                   {item.label}
                 </a>
               ))}
             </nav>
 
-            {/* CTA Button */}
-            <Button 
+            {/* CTA */}
+            <Button
               className="w-full bg-[#a20504] hover:bg-[#c41e1c] text-[#1a0000] border border-[#e8e8e8] mb-8"
               size="lg"
               onClick={() => {
                 handleLinkClick();
                 setTimeout(() => {
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }, 100);
               }}
             >
               Get Free Consultation
             </Button>
 
-            {/* Quick Contact */}
+            {/* Contact */}
             <div className="space-y-4">
-              <h3 className="text-sm font-bold text-[#6b6b6b] uppercase tracking-wide mb-4">
+              <h3 className="text-sm font-bold text-[#6b6b6b] uppercase mb-4">
                 Quick Contact
               </h3>
-              
-              <a 
+
+              <a
                 href="tel:+919876543210"
-                className="flex items-center gap-3 p-4 bg-[#f8f8f8] border-2 border-[#e8e8e8] hover:shadow-lg hover:shadow-[rgba(162,5,4,0.1)] transition-all"
+                className="flex items-center gap-3 p-4 bg-[#f8f8f8] border-2 border-[#e8e8e8]"
               >
-                <div className="w-10 h-10 bg-[#fef2f2] border-2 border-[#e8e8e8] flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-[#1a0000]" />
-                </div>
+                <Phone className="w-5 h-5" />
                 <div>
                   <div className="text-xs text-[#6b6b6b]">Call Us</div>
-                  <div className="font-bold text-[#1a0000]">+91 98765 43210</div>
+                  <div className="font-bold">+91 98765 43210</div>
                 </div>
               </a>
 
-              <a 
+              <a
                 href="mailto:info@mikevents.in"
-                className="flex items-center gap-3 p-4 bg-[#f8f8f8] border-2 border-[#e8e8e8] hover:shadow-lg hover:shadow-[rgba(162,5,4,0.1)] transition-all"
+                className="flex items-center gap-3 p-4 bg-[#f8f8f8] border-2 border-[#e8e8e8]"
               >
-                <div className="w-10 h-10 bg-[#c41e1c] border-2 border-[#e8e8e8] flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-[#1a0000]" />
-                </div>
+                <Mail className="w-5 h-5" />
                 <div>
                   <div className="text-xs text-[#6b6b6b]">Email Us</div>
-                  <div className="font-bold text-[#1a0000]">info@mikevents.in</div>
+                  <div className="font-bold">info@mikevents.in</div>
                 </div>
               </a>
 
-              <a 
+              <a
                 href="https://wa.me/919876543210"
-                className="flex items-center gap-3 p-4 bg-[#f8f8f8] border-2 border-[#e8e8e8] hover:shadow-lg hover:shadow-[rgba(162,5,4,0.1)] transition-all"
+                className="flex items-center gap-3 p-4 bg-[#f8f8f8] border-2 border-[#e8e8e8]"
               >
-                <div className="w-10 h-10 bg-gradient-to-r from-[#a20504] to-[#c41e1c] border-2 border-[#e8e8e8] flex items-center justify-center flex-shrink-0">
-                  <MessageCircle className="w-5 h-5 text-[#1a0000]" />
-                </div>
+                <MessageCircle className="w-5 h-5" />
                 <div>
                   <div className="text-xs text-[#6b6b6b]">WhatsApp</div>
-                  <div className="font-bold text-[#1a0000]">Chat with us</div>
+                  <div className="font-bold">Chat with us</div>
                 </div>
               </a>
             </div>
+
           </div>
         </div>
       )}
