@@ -24,6 +24,7 @@ const testimonials = [
     content:
       "Working with MIKE Events has been a smooth and well-managed experience. Their professionalism and ability to handle complex conference requirements make them a trusted partner.",
     rating: 5,
+    image: "/images/testimonials/savior.png",
     
   },
   {
@@ -70,7 +71,7 @@ const testimonials = [
     content:
       "From planning to execution, MIKE Events has shown exceptional commitment and attention to detail. Their ability to manage large-format event requirements seamlessly is highly appreciated.",
     rating: 5,
-    image: "/images/testimonials/rai.jpeg",
+    image: "/images/testimonials/rai1.jpeg",
     
   }
 ];
