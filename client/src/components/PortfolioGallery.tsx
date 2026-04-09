@@ -72,7 +72,7 @@ export default function PortfolioGallery() {
     imageUrl: "/images/events/2.png",
     description: "Prestigious industry conference with global stakeholders, focusing on innovation, market trends, and strategic collaborations.",
     client: "APIC",
-    attendees: "520+ Delegates",
+    attendees: "1500+ Delegates",
     year: "2023"
   },
   {
@@ -92,7 +92,7 @@ export default function PortfolioGallery() {
     imageUrl: "/images/events/6.png",
     description: "Industry-leading conference delivering impactful discussions and high-level networking among petrochemical leaders.",
     client: "APIC",
-    attendees: "420+ Delegates",
+    attendees: "1500+ Delegates",
     year: "2023"
   },
   {
@@ -102,17 +102,17 @@ export default function PortfolioGallery() {
     imageUrl: "/images/events/7.png",
     description: "Exclusive closed-door colloquium designed for CFOs, featuring expert-led discussions on financial strategy and market outlook.",
     client: "Kotak",
-    attendees: "550+ Executives",
+    attendees: "300+ Executives",
     year: "2025"
   },
   {
     id: 8,
-    title: "Sleepwell Exhibition",
+    title: "Sleepwell Distributor Meet",
     category: "Exhibitions",
     imageUrl: "/images/events/8.png",
     description: "Large-scale product exhibition showcasing innovative sleep solutions with immersive brand experiences and live demos.",
     client: "Sleepwell",
-    attendees: "600+ Visitors",
+    attendees: "1500 plus Dealers and Distributors",
     year: "2025"
   },
   {
@@ -132,7 +132,7 @@ export default function PortfolioGallery() {
     imageUrl: "/images/events/10.png",
     description: "International medical congress featuring global experts, research presentations, and advanced scientific discussions.",
     client: "APFCB",
-    attendees: "1200+ Participants",
+    attendees: "2500+ Participants",
     year: "2019"
   },
   
@@ -149,12 +149,12 @@ export default function PortfolioGallery() {
   },
   {
     id: 16,
-    title: "Kotak Mutual Fund Summit",
+    title: "IGM Indian gold metaverse",
     category: "Corporate",
-    imageUrl: "/images/events/16.jpeg",
-    description: "Investor-focused summit delivering insights on wealth strategies, financial planning, and market trends.",
-    client: "Kotak Mutual Fund",
-    attendees: "700+ Investors",
+    imageUrl: "/images/events/33.jpeg",
+    description: "An exclusive corporate event by IGM, the Indian Gold Metaverse, hosting 1500+ Delegates to explore digital gold and blockchain innovations.",
+    client: "IGM",
+    attendees: "1500+ Delegates",
     year: "2025"
   },
   {
@@ -174,7 +174,7 @@ export default function PortfolioGallery() {
     imageUrl: "/images/events/20.jpeg",
     description: "Leading medical conference focused on gastrointestinal surgery with live case discussions and expert sessions.",
     client: "Fortis",
-    attendees: "900+ Doctors",
+    attendees: "300+ Doctors",
     year: "2019"
   },
   {

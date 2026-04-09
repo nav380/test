@@ -7,14 +7,15 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const testimonials = [
-  
+
   {
-    name: " Niket Mehra ",
+    name: "Niket Mehra ",
     role: "Senior Project Manager - Corporate Events,",
     company: " Dun & Bradstreet",
     content:
       "MIKE Events consistently demonstrates strong ownership, professionalism, and execution excellence across every stage of the project. Their team understands client expectations well and delivers with reliability.",
     rating: 5,
+    image: "/images/testimonials/niket.jpeg",
   },
   {
     name: "Savio Sutari, , ",
@@ -23,6 +24,7 @@ const testimonials = [
     content:
       "Working with MIKE Events has been a smooth and well-managed experience. Their professionalism and ability to handle complex conference requirements make them a trusted partner.",
     rating: 5,
+    
   },
   {
     name: "Kinjal Shah",
@@ -31,6 +33,7 @@ const testimonials = [
     content:
       "Working with MIKE Events has been a highly reassuring experience for our team. They understand the importance of presentation, precision, and brand alignment in delivering meaningful event experiences.",
     rating: 5,
+    image: "/images/testimonials/kinjal.jpg",
   },
   {
     name: "Rahul Sarkar ",
@@ -39,6 +42,7 @@ const testimonials = [
     content:
       "MIKE Events has been a dependable partner in delivering well-executed and professionally managed event experiences. Their responsiveness, attention to detail, and execution focus make them a reliable extension of the team.",
     rating: 5,
+    image: "/images/testimonials/rahul.jpeg",
   },
   {
     name: "Dr. Shoaib Padaria",
@@ -47,6 +51,7 @@ const testimonials = [
     content:
       "Our experience with MIKE Events was extremely smooth and professionally managed. Their attention to detail and ability to handle the complexities of a medical conference were truly commendable.",
     rating: 5,
+    image: "/images/testimonials/shoaib.jpeg",
   },
   {
     name: "Manoj Sharma",
@@ -55,14 +60,16 @@ const testimonials = [
     content:
       "Working with MIKE Events has always been a smooth and reassuring experience. Their structured approach and commitment to quality make them a dependable event partner.",
     rating: 5,
+    
   }
-  ,{
+  , {
     name: "Saurabh Rai",
     role: "Marketing",
     company: "Sennheiser Electronics Consumer Division",
     content:
       "From planning to execution, MIKE Events has shown exceptional commitment and attention to detail. Their ability to manage large-format event requirements seamlessly is highly appreciated.",
     rating: 5,
+    
   }
 ];
 
@@ -121,19 +128,32 @@ export default function TestimonialsSection() {
             </p>
 
             {/* Author */}
+            {/* Author */}
             <div className="flex items-center gap-4">
-              <div
-                className="w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold text-white flex-shrink-0"
-                style={{ background: "#a20504" }}
-              >
-                {t.name.charAt(0)}
+              <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 border border-gray-200 shadow-sm bg-gray-100">
+                {t.image && t.image.trim() !== "" ? (
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
+                  />
+                ) : (
+                  <span className="flex items-center justify-center w-full h-full font-bold text-gray-600">
+                    {t.name?.trim()?.charAt(0) || "U"}
+                  </span>
+                )}
               </div>
+
               <div>
                 <p className="font-bold text-base" style={{ color: "#1a0000" }}>
-                  {t.name}
+                  {t.name.replace(/,+/g, "").trim()}
                 </p>
                 <p className="text-sm" style={{ color: "#6b6b6b" }}>
-                  {t.role}, {t.company}
+                  {t.role?.replace(/,+/g, "").trim()}, {t.company?.trim()}
                 </p>
               </div>
             </div>
