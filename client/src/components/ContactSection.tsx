@@ -212,7 +212,7 @@ export default function ContactSection() {
                 <h4 className="text-red-700 font-bold">Our Office</h4>
                 <p className="text-gray-500 text-sm">
                   New Delhi, India <br />
-                  Dr Ambedkar Colony, Chhatarpur
+                  D134, Opposite kairali health Centre,<br /> Meharauli, New Delhi 110030
                 </p>
               </div>
             </div>

@@ -38,7 +38,7 @@ const services: Service[] = [
     icon: "🎤",
     title: "Conference Management",
     tagline: "Seamless conferences, lasting impact",
-    frontHighlights: ["International & national conferences", "Hybrid & virtual formats", "Speaker management"],
+    frontHighlights: ["International & National conferences", "Hybrid & virtual formats", "Speaker management"],
     backDescription:
       "From intimate symposia to large-scale international congresses, we manage every detail — venue selection, abstract management, speaker coordination, AV production, and delegate registration — ensuring a flawless experience that elevates your brand and delivers measurable outcomes.",
     backPoints: [
