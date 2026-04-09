@@ -60,6 +60,7 @@ const testimonials = [
     content:
       "Working with MIKE Events has always been a smooth and reassuring experience. Their structured approach and commitment to quality make them a dependable event partner.",
     rating: 5,
+    image: "/images/testimonials/manoj.jpeg",
     
   }
   , {
