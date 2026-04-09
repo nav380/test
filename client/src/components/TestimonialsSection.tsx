@@ -18,7 +18,7 @@ const testimonials = [
     image: "/images/testimonials/niket.jpeg",
   },
   {
-    name: "Savio Sutari, , ",
+    name: "Savio Sutari",
     role: "Head Projects – Conference",
     company: "Dun & Bradstreet India",
     content:
@@ -56,7 +56,7 @@ const testimonials = [
   {
     name: "Manoj Sharma",
     role: "CMO",
-    company: "Sheela Foam Ltd.",
+    company: "Sheela Foam Ltd",
     content:
       "Working with MIKE Events has always been a smooth and reassuring experience. Their structured approach and commitment to quality make them a dependable event partner.",
     rating: 5,
