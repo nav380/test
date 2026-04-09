@@ -33,7 +33,7 @@ const testimonials = [
     content:
       "Working with MIKE Events has been a highly reassuring experience for our team. They understand the importance of presentation, precision, and brand alignment in delivering meaningful event experiences.",
     rating: 5,
-    image: "/images/testimonials/kinjal.jpg",
+    image: "/images/testimonials/kinjal1.jpg",
   },
   {
     name: "Rahul Sarkar ",
@@ -42,7 +42,7 @@ const testimonials = [
     content:
       "MIKE Events has been a dependable partner in delivering well-executed and professionally managed event experiences. Their responsiveness, attention to detail, and execution focus make them a reliable extension of the team.",
     rating: 5,
-    image: "/images/testimonials/rahul.jpeg",
+    image: "/images/testimonials/rahul1.jpeg",
   },
   {
     name: "Dr. Shoaib Padaria",
