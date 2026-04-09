@@ -9,37 +9,61 @@ import { useState, useEffect } from "react";
 const testimonials = [
   
   {
+    name: " Niket Mehra ",
+    role: "Senior Project Manager - Corporate Events,",
+    company: " Dun & Bradstreet",
+    content:
+      "MIKE Events consistently demonstrates strong ownership, professionalism, and execution excellence across every stage of the project. Their team understands client expectations well and delivers with reliability.",
+    rating: 5,
+  },
+  {
+    name: "Savio Sutari, , ",
+    role: "Head Projects – Conference",
+    company: "Dun & Bradstreet India",
+    content:
+      "Working with MIKE Events has been a smooth and well-managed experience. Their professionalism and ability to handle complex conference requirements make them a trusted partner.",
+    rating: 5,
+  },
+  {
+    name: "Kinjal Shah",
+    role: "CMO",
+    company: "Kotak Mutual Fund",
+    content:
+      "Working with MIKE Events has been a highly reassuring experience for our team. They understand the importance of presentation, precision, and brand alignment in delivering meaningful event experiences.",
+    rating: 5,
+  },
+  {
+    name: "Rahul Sarkar ",
+    role: "B2B Marketing, DGM & Team Leader",
+    company: "LG Electronics India",
+    content:
+      "MIKE Events has been a dependable partner in delivering well-executed and professionally managed event experiences. Their responsiveness, attention to detail, and execution focus make them a reliable extension of the team.",
+    rating: 5,
+  },
+  {
     name: "Dr. Shoaib Padaria",
-    role: "Head of Department (HOD)",
-    company: "Jaslok Hospital",
+    role: "Director ",
+    company: "Jaslok Hospital, Mumbai",
     content:
-      "The incentive travel programme organised by MIKE Events exceeded all expectations. Our team had an amazing experience, and the event truly motivated everyone. Professional service from start to finish.",
+      "Our experience with MIKE Events was extremely smooth and professionally managed. Their attention to detail and ability to handle the complexities of a medical conference were truly commendable.",
     rating: 5,
   },
   {
-    name: "Parveen Sharma",
-    role: "Ex-Dean",
-    company: "AIIMS Jodhpur",
+    name: "Manoj Sharma",
+    role: "CMO",
+    company: "Sheela Foam Ltd.",
     content:
-      "We've worked with MIKE Events on multiple exhibitions and conferences. Their technology-driven approach and transparent communication make them stand out. They truly understand our industry needs.",
+      "Working with MIKE Events has always been a smooth and reassuring experience. Their structured approach and commitment to quality make them a dependable event partner.",
     rating: 5,
-  },
-  {
-    name: "Niket Mehra",
-    role: "Senior Project Manager",
-    company: "DNB",
+  }
+  ,{
+    name: "Saurabh Rai",
+    role: "Marketing",
+    company: "Sennheiser Electronics Consumer Division",
     content:
-      "MIKE Events handled our international conference in Delhi with exceptional professionalism. From speaker coordination to delegate management, everything was perfect. They made magic happen!",
+      "From planning to execution, MIKE Events has shown exceptional commitment and attention to detail. Their ability to manage large-format event requirements seamlessly is highly appreciated.",
     rating: 5,
-  },
-  {
-    name: "Savio",
-    role: "Head Projects- Conferences",
-    company: "DNB",
-    content:
-      "MIKE Events handled our international conference in Delhi with exceptional professionalism. From speaker coordination to delegate management, everything was perfect. They made magic happen!",
-    rating: 5,
-  },
+  }
 ];
 
 export default function TestimonialsSection() {

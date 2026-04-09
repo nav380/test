@@ -146,7 +146,7 @@ export default function MobileMenu() {
                 <Phone className="w-5 h-5" />
                 <div>
                   <div className="text-xs text-[#6b6b6b]">Call Us</div>
-                  <div className="font-bold">+91 98765 43210</div>
+                  <div className="font-bold">+91 8586877073</div>
                 </div>
               </a>
 
