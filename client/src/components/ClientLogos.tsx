@@ -45,6 +45,12 @@ export default function ClientLogos() {
   {name:"COLLECTIVE ARTISTS" ,logo:"/images/sponsors/35.png"},
   {name:"TVS" ,logo:"/images/sponsors/36.png"},
   {name:"LUPIN" ,logo:"/images/sponsors/37.png"},
+  {name:"LUPIN" ,logo:"/images/sponsors/40.png"},
+  {name:"LUPIN" ,logo:"/images/sponsors/41.png"},
+  {name:"LUPIN" ,logo:"/images/sponsors/42.png"},
+  {name:"LUPIN" ,logo:"/images/sponsors/43.png"},
+  {name:"LUPIN" ,logo:"/images/sponsors/44.png"},
+  {name:"LUPIN" ,logo:"/images/sponsors/45.png"},
 
 
     
@@ -68,7 +74,7 @@ export default function ClientLogos() {
         </div>
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-8">
+        <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-10 gap-8">
           {clients.map((client, index) => (
             <div
               key={index}

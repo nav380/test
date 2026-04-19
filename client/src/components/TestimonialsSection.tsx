@@ -74,6 +74,25 @@ const testimonials = [
     image: "/images/testimonials/rai1.jpeg",
     
   }
+  ,
+  {
+    name: "Anubhav Garg",
+    role: "MD",
+    company: "NYK",
+    content:
+      "Thank you for all the arrangements and seamless execution by your team. We thoroughly enjoyed the event, and every detail was managed exceptionally well. Wishing you continued success and looking forward to working together again.",
+    rating: 5,
+    image: "/images/testimonials/Anubhav.jpeg",  
+  },
+  {
+    name: "Dr. Praveen Sharma",
+    role: "Ex Dean",
+    company: "AIIMS Jodhpur",
+    content:
+      "We sincerely appreciate the outstanding support and flawless execution delivered by MIKE Hospitality for our prestigious conferences — APFCB Asia Pacific Conference in 2019 and WASPaLM in 2025. Managing events of this scale and significance requires precision, commitment, and professionalism, all of which were demonstrated exceptionally by the team. Their attention to detail, seamless coordination, and dedication to excellence played a key role in the success of both conferences. We value this association and extend our best wishes for their continued growth and success.",
+    rating: 5,
+    image: "/images/testimonials/Praveen.jpeg",  
+  }
 ];
 
 export default function TestimonialsSection() {

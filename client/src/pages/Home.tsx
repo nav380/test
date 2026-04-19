@@ -251,7 +251,7 @@ export default function Home() {
               className="inline-block text-xs font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-6"
               style={{ background: "rgba(162,5,4,0.85)", color: "#fff", backdropFilter: "blur(8px)" }}
             >
-              Together We Make Magic
+              Together, We Create Magic
             </span>
 
             <h1 className="text-white mb-6 text-4xl md:text-6xl font-bold leading-tight">
