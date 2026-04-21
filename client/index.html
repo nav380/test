@@ -51,5 +51,47 @@
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
       data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
+  <script>
+    // Function to set custom cursor
+const setCustomCursor = (imageUrl) => {
+    // 16 16 sets the 'hotspot' to the center of a 32x32 image
+    document.body.style.cursor = `url('${imageUrl}') 16 16, auto`;
+};
 
+// Usage
+setCustomCursor('/images/mike/mikelogo.png');
+// 1. Create the cursor element
+const cursor = document.createElement('div');
+cursor.id = "js-custom-cursor";
+
+// 2. Add styles via JS
+Object.assign(cursor.style, {
+    width: '64px',
+    height: '64px',
+    backgroundImage: "url('/images/mike/cursor.png')",
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    position: 'fixed',
+    pointerEvents: 'none', // Critical: allows clicking through the image
+    zIndex: '9999',
+     transform: 'rotate(-20deg)', // Centers the image on the mouse tip
+    transition: 'transform 0.1s ease-out' // Optional: adds a tiny bit of smoothness
+    
+});
+
+document.body.appendChild(cursor);
+
+// 3. Hide the default mouse
+document.body.style.cursor = 'none';
+
+// 4. Update position on mouse move
+window.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+});
+
+// 5. Handle clicks (Optional: add a scale effect)
+window.addEventListener('mousedown', () => cursor.style.transform = 'translate(-50%, -50%) scale(0.8)');
+window.addEventListener('mouseup', () => cursor.style.transform = 'translate(-50%, -50%) scale(1)');
+  </script>
 </html>

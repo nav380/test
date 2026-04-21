@@ -562,7 +562,7 @@ export default function Home() {
                   className="w-11 h-11 rounded-lg flex items-center justify-center font-bold text-xl text-white"
                   style={{ background: C.crimson }}
                 >
-                   <img src="/images/mike/mikelogo.png" alt="MIKE Events" className="w-full h-full object-contain" />
+                   <img src="/images/mike/mikelogo.png" alt="MIKE Events" className="w-full h-full object-contain scale-90" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white leading-none">MIKE Events</h3>
