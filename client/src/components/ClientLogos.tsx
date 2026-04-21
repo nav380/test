@@ -85,7 +85,7 @@ export default function ClientLogos() {
                 <div className="absolute inset-0  rounded  transition-opacity" />
                 <div className="relative z-10 text-center">
                   <div className=" w-16 h-16 mx-auto mb-2  rounded-lg flex items-center justify-center">
-                    <span className="text-[#1a0000] font-bold text-lg"><img src={client.logo} alt={client.name} className="w-full h-full object-contain scale-125" /></span>
+                    <span className="text-[#1a0000] font-bold text-lg"><img src={client.logo} alt={client.name} className="w-full h-full object-contain md:scale-125" /></span>
                   </div>
 
                 </div>
