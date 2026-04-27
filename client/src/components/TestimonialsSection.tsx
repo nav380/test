@@ -78,7 +78,7 @@ const testimonials = [
   {
     name: "Anubhav Garg",
     role: "MD",
-    company: "NYK",
+    company: "NYK Shipping Corporation, Singapore",
     content:
       "Thank you for all the arrangements and seamless execution by your team. We thoroughly enjoyed the event, and every detail was managed exceptionally well. Wishing you continued success and looking forward to working together again.",
     rating: 5,
