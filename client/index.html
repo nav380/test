@@ -89,7 +89,13 @@ window.addEventListener('mousemove', (e) => {
     cursor.style.left = `${e.clientX-14}px`;
     cursor.style.top = `${e.clientY-14}px`;
 });
-
+const style = document.createElement('style');
+style.innerHTML = `
+  * {
+    cursor: none !important;
+  }
+`;
+document.head.appendChild(style);
 // 5. Handle clicks (Optional: add a scale effect)
 window.addEventListener('mousedown', () => cursor.style.transform = 'rotate(-20deg) scale(0.8)');
 window.addEventListener('mouseup', () => cursor.style.transform = 'rotate(-20deg) scale(1)');
