@@ -86,8 +86,8 @@ document.body.style.cursor = 'none';
 
 // 4. Update position on mouse move
 window.addEventListener('mousemove', (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX-14}px`;
+    cursor.style.top = `${e.clientY-14}px`;
 });
 
 // 5. Handle clicks (Optional: add a scale effect)
