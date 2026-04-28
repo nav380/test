@@ -169,17 +169,12 @@ export default function Home() {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div
-                className="w-14 h-14 rounded-lg flex items-center justify-center font-bold text-xl text-white shadow-lg"
+                className="w-auto h-16 rounded-lg flex items-center justify-center font-bold text-xl text-white shadow-lg"
                 
               >
                 <img src="/images/mike/mikelogo.png" alt="MIKE Events" className="w-full h-full object-contain" />
               </div>
-              <div>
-                <h1 className="text-lg font-bold text-white leading-none">MIKE Events</h1>
-                <p className="text-xs" style={{ color: "#f87171" }}>
-                  Together We Create Magic
-                </p>
-              </div>
+              
             </div>
 
             {/* Desktop nav */}
@@ -559,17 +554,12 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <div
-                  className="w-11 h-11 rounded-lg flex items-center justify-center font-bold text-xl text-white"
-                  style={{ background: C.crimson }}
+                  className="w-auto h-24 rounded-lg flex items-center justify-center font-bold text-xl text-white"
+                  
                 >
-                   <img src="/images/mike/mikelogo.png" alt="MIKE Events" className="w-full h-full object-contain scale-90" />
+                   <img src="/images/mike/MIKE Logo.png" alt="MIKE Events" className="w-full h-full object-contain scale-90" />
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white leading-none">MIKE Events</h3>
-                  <p className="text-xs" style={{ color: "#f87171" }}>
-                    Together We Create Magic
-                  </p>
-                </div>
+                
               </div>
               <p className="text-sm leading-relaxed" style={{ color: "#9ca3af" }}>
                 India's premier MICE &amp; event management company delivering extraordinary
