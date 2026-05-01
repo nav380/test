@@ -189,16 +189,16 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between min-h-[50px]">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <div
-                className="w-auto h-16 rounded-lg flex items-center justify-center font-bold text-xl text-white shadow-lg"
-
-              >
-                <img src="/images/mike/mikelogo.png" alt="MIKE Events" className="w-full h-full object-contain" loading="lazy"
+            <div className="flex items-center space-x-3 max-w-[200px]">
+              <div className="h-16 flex items-center justify-center">
+                <img
+                  src="/images/mike/mikelogo.png"
+                  alt="MIKE Events"
+                  className="h-full w-auto object-contain"
+                  loading="lazy"
                   decoding="async"
                 />
               </div>
-
             </div>
 
             {/* Desktop nav */}
