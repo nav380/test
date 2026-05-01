@@ -142,7 +142,28 @@ export default function Home() {
 
     return () => clearInterval(interval);
   }, []);
+  function safeColor(color: string | undefined, alpha: number = 0.85): string {
+    if (!color) return `rgba(0,0,0,${alpha})`;
 
+    // rgba → return as is
+    if (color.startsWith("rgba")) return color;
+
+    // rgb → convert to rgba
+    if (color.startsWith("rgb")) {
+      return color.replace("rgb", "rgba").replace(")", `, ${alpha})`);
+    }
+
+    // hex (#rrggbb)
+    if (color.startsWith("#") && color.length === 7) {
+      const r = parseInt(color.slice(1, 3), 16);
+      const g = parseInt(color.slice(3, 5), 16);
+      const b = parseInt(color.slice(5, 7), 16);
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    // fallback (CSS vars etc.)
+    return color;
+  }
   return (
     <div className="min-h-screen" style={{ background: C.white, color: C.textDark }}>
       <SEOHead />
@@ -157,24 +178,27 @@ export default function Home() {
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
         style={{
           background: scrolled
-            ? `${C.darkBg}f5`
+            ? safeColor(C.darkBg, 0.85)
             : C.darkBg,
           backdropFilter: scrolled ? "blur(12px)" : "none",
+          WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
           borderBottom: scrolled ? `1px solid ${C.darkBg2}` : "none",
           boxShadow: scrolled ? "0 2px 20px rgba(162,5,4,0.15)" : "none",
         }}
       >
         <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
+          <nav className="flex items-center justify-between min-h-[50px]">
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div
                 className="w-auto h-16 rounded-lg flex items-center justify-center font-bold text-xl text-white shadow-lg"
-                
+
               >
-                <img src="/images/mike/mikelogo.png" alt="MIKE Events" className="w-full h-full object-contain" />
+                <img src="/images/mike/mikelogo.png" alt="MIKE Events" className="w-full h-full object-contain" loading="lazy"
+                  decoding="async"
+                />
               </div>
-              
+
             </div>
 
             {/* Desktop nav */}
@@ -183,10 +207,9 @@ export default function Home() {
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                  className="text-sm font-medium text-gray-300 transition-colors hover:text-red-300"
                   style={{ textDecoration: "none" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#fca5a5")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#d1d5db")}
+
                 >
                   {item}
                 </a>
@@ -555,11 +578,11 @@ export default function Home() {
               <div className="flex items-center space-x-3 mb-4">
                 <div
                   className="w-auto h-24 rounded-lg flex items-center justify-center font-bold text-xl text-white"
-                  
+
                 >
-                   <img src="/images/mike/MIKE Logo.png" alt="MIKE Events" className="w-full h-full object-contain scale-90" />
+                  <img src="/images/mike/MIKE Logo.png" alt="MIKE Events" className="w-full h-full object-contain scale-90" />
                 </div>
-                
+
               </div>
               <p className="text-sm leading-relaxed" style={{ color: "#9ca3af" }}>
                 India's premier MICE &amp; event management company delivering extraordinary
