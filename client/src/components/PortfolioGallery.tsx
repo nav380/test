@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 
-type Category = "All" | "Conferences" | "Exhibitions" | "Corporate" | "Associations" | "Government";
+type Category = "All" | "Conferences" |  "Corporate" | "Associations" ;
 
 interface PortfolioItem {
   id: number;
@@ -37,8 +37,8 @@ export default function PortfolioGallery() {
  const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "44th Annual Function",
-    category: "Conferences",
+    title: "CEAMA",
+    category: "Corporate",
     imageUrl: "/images/events/1.png",
     description: "Flagship industry gathering focused on the inclusive growth of India’s ACE sector, featuring policy leaders and business visionaries.",
     client: "CEAMA",
@@ -48,7 +48,7 @@ export default function PortfolioGallery() {
   {
     id: 2,
     title: "Kotak Annual Leadership Summit",
-    category: "Conferences",
+    category: "Corporate",
     imageUrl: "/images/events/4.png",
     description: "High-impact leadership summit bringing together senior executives for strategic insights, networking, and future-focused discussions.",
     client: "Kotak",
@@ -57,8 +57,8 @@ export default function PortfolioGallery() {
   },
   {
     id: 3,
-    title: "Annual Business Conference",
-    category: "Conferences",
+    title: "ROCA",
+    category: "Corporate",
     imageUrl: "/images/events/3.png",
     description: "Curated business conference featuring keynote sessions, panel discussions, and networking opportunities for industry professionals.",
     client: "ROCA",
@@ -68,7 +68,7 @@ export default function PortfolioGallery() {
   {
     id: 4,
     title: "Asian Petrochemical Industry Conference",
-    category: "Corporate",
+    category: "Associations",
     imageUrl: "/images/events/2.png",
     description: "Prestigious industry conference with global stakeholders, focusing on innovation, market trends, and strategic collaborations.",
     client: "APIC",
@@ -78,7 +78,7 @@ export default function PortfolioGallery() {
   {
     id: 5,
     title: "Kotak Annual Meet",
-    category: "Associations",
+    category: "Corporate",
     imageUrl: "/images/events/5.png",
     description: "Annual corporate gathering featuring stakeholder engagement sessions followed by an exclusive networking dinner experience.",
     client: "Kotak",
@@ -88,7 +88,7 @@ export default function PortfolioGallery() {
   {
     id: 6,
     title: "Asian Petrochemical Industry Conference",
-    category: "Corporate",
+    category: "Associations",
     imageUrl: "/images/events/6.png",
     description: "Industry-leading conference delivering impactful discussions and high-level networking among petrochemical leaders.",
     client: "APIC",
@@ -98,7 +98,7 @@ export default function PortfolioGallery() {
   {
     id: 7,
     title: "Kotak CFO Colloquium",
-    category: "Conferences",
+    category: "Corporate",
     imageUrl: "/images/events/7.png",
     description: "Exclusive closed-door colloquium designed for CFOs, featuring expert-led discussions on financial strategy and market outlook.",
     client: "Kotak",
@@ -108,7 +108,7 @@ export default function PortfolioGallery() {
   {
     id: 8,
     title: "Sleepwell Distributor Meet",
-    category: "Exhibitions",
+    category: "Corporate",
     imageUrl: "/images/events/8.png",
     description: "Large-scale product exhibition showcasing innovative sleep solutions with immersive brand experiences and live demos.",
     client: "Sleepwell",
@@ -117,18 +117,18 @@ export default function PortfolioGallery() {
   },
   {
     id: 9,
-    title: "54th BAITHAK Meeting",
+    title: "WRPC 2025",
     category: "Associations",
     imageUrl: "/images/events/9.png",
     description: "Strategic association meeting combining knowledge sessions, workshops, and member networking initiatives.",
     client: "DB Power Ltd",
     attendees: "280+ Members",
-    year: "2024"
+    year: "2025"
   },
   {
     id: 10,
     title: "15th APFCB Congress",
-    category: "Conferences",
+    category: "Associations",
     imageUrl: "/images/events/10.png",
     description: "International medical congress featuring global experts, research presentations, and advanced scientific discussions.",
     client: "APFCB",
@@ -140,7 +140,7 @@ export default function PortfolioGallery() {
   {
     id: 15,
     title: "Rising Star Awards",
-    category: "Government",
+    category: "Corporate",
     imageUrl: "/images/events/15.jpeg",
     description: "High-profile awards night celebrating excellence, featuring celebrity appearances, media coverage, and premium production.",
     client: "Aaj Tak",
@@ -149,13 +149,13 @@ export default function PortfolioGallery() {
   },
   {
     id: 16,
-    title: "IGM Indian gold metaverse",
+    title: "IIBS",
     category: "Corporate",
     imageUrl: "/images/events/33.jpeg",
     description: "An exclusive corporate event by IGM, the Indian Gold Metaverse, hosting 1500+ Delegates to explore digital gold and blockchain innovations.",
     client: "IGM",
     attendees: "1500+ Delegates",
-    year: "2025"
+    year: "2026"
   },
   {
     id: 19,
@@ -170,7 +170,7 @@ export default function PortfolioGallery() {
   {
     id: 20,
     title: "GI Surgicon",
-    category: "Conferences",
+    category: "Associations",
     imageUrl: "/images/events/20.jpeg",
     description: "Leading medical conference focused on gastrointestinal surgery with live case discussions and expert sessions.",
     client: "Fortis",
@@ -180,7 +180,7 @@ export default function PortfolioGallery() {
   {
     id: 21,
     title: "Ophtha Quest",
-    category: "Conferences",
+    category: "Associations",
     imageUrl: "/images/events/21.jpeg",
     description: "Specialized ophthalmology conference highlighting innovations, surgical advancements, and clinical practices.",
     client: "Haryana Ophthalmological Society",
@@ -190,7 +190,7 @@ export default function PortfolioGallery() {
   {
     id: 22,
     title: "VAICON Conference",
-    category: "Conferences",
+    category: "Associations",
     imageUrl: "/images/events/22.jpeg",
     description: "Annual venue industry conference fostering collaboration, networking, and knowledge exchange.",
     client: "Venue Association of India",
@@ -209,28 +209,19 @@ export default function PortfolioGallery() {
   },
   {
     id: 24,
-    title: "WASPALM Conference",
-    category: "Government",
+    title: "WASPALM 2025",
+    category: "Associations",
     imageUrl: "/images/events/24.jpeg",
     description: "Large-scale scientific and academic conference bringing together researchers and professionals nationwide.",
     client: "Association of Clinical Biochemists of India",
     attendees: "1300+ Delegates",
     year: "2025"
   },
-  {
-    id: 26,
-    title: "APFCB International Conference",
-    category: "Conferences",
-    imageUrl: "/images/events/26.jpeg",
-    description: "Globally recognized congress featuring international experts, cutting-edge research, and scientific sessions.",
-    client: "IFCC / APFCB",
-    attendees: "1500+ Participants",
-    year: "2019"
-  },
+ 
   {
     id: 27,
     title: "National Rubber Conference",
-    category: "Conferences",
+    category: "Associations",
     imageUrl: "/images/events/27.jpeg",
     description: "Industry-focused conference exploring innovation, manufacturing trends, and future technologies in rubber.",
     client: "All India Rubber Industries Association",
@@ -239,8 +230,8 @@ export default function PortfolioGallery() {
   },
   {
     id: 28,
-    title: "Broncocon",
-    category: "Conferences",
+    title: "Broncocon 2019",
+    category: "Associations",
     imageUrl: "/images/events/28.jpeg",
     description: "Specialized pulmonary conference featuring expert-led sessions and advancements in respiratory care.",
     client: "Medical Association",
@@ -249,8 +240,8 @@ export default function PortfolioGallery() {
   },
   {
     id: 29,
-    title: "WASOG Conference",
-    category: "Conferences",
+    title: "WASOG 2024",
+    category: "Associations",
     imageUrl: "/images/events/29.jpeg",
     description: "International conference on interstitial lung diseases with global participation and research exchange.",
     client: "WASOG",
@@ -270,7 +261,7 @@ export default function PortfolioGallery() {
   {
     id: 32,
     title: "Spine Surgery Conference",
-    category: "Government",
+    category: "Associations",
     imageUrl: "/images/events/32.jpeg",
     description: "Government-led national conference focused on education, innovation, and large-scale participation.",
     client: "Ministry of Education",
@@ -279,7 +270,7 @@ export default function PortfolioGallery() {
   }
 ];
 
-  const categories: Category[] = ["All", "Conferences", "Exhibitions", "Corporate", "Associations", "Government"];
+  const categories: Category[] = ["All", "Conferences",  "Corporate", "Associations"];
 
   const filteredItems = selectedCategory === "All"
     ? portfolioItems
@@ -460,7 +451,7 @@ export default function PortfolioGallery() {
                   <div className="space-y-3">
                     {selectedImage.client && (
                       <div className="flex items-start gap-3">
-                        <span className="text-[#a20504] font-semibold min-w-[100px]">Client:</span>
+                        <span className="text-[#a20504] font-semibold min-w-[100px]">Event:</span>
                         <span className="text-[#6b6b6b]">{selectedImage.client}</span>
                       </div>
                     )}
