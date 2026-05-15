@@ -92,6 +92,15 @@ const testimonials = [
       "We sincerely appreciate the outstanding support and flawless execution delivered by MIKE Hospitality for our prestigious conferences — APFCB Asia Pacific Conference in 2019 and WASPaLM in 2025. Managing events of this scale and significance requires precision, commitment, and professionalism, all of which were demonstrated exceptionally by the team. Their attention to detail, seamless coordination, and dedication to excellence played a key role in the success of both conferences. We value this association and extend our best wishes for their continued growth and success.",
     rating: 5,
     image: "/images/testimonials/Praveen.jpeg",  
+  },
+  {
+    name: "Ujjwal Roy",
+    role: "VP",
+    company: "JPVL",
+    content:
+      "We are writing to express our sincere appreciation for the exceptional work your team did in managing the 54th Meeting of Technical Coordination Committee & Western Regional Power Committee (WRPC) held at Agra, Uttar Pradesh on 25th April & 26th April, 2025. The seamless organization, attention to detail, and professional execution truly contributed to the Event's success. From the initial planning stages to the final wrap-up, your team demonstrated remarkable efficiency and a proactive approach in handling all logistical aspects. The venue arrangements were excellent. We were particularly impressed with the efficient registration process and the smooth handling of the last-minute requests. Thank you once again for your outstanding support. Sincerely yours,",
+    rating: 5,
+    image: "/images/testimonials/Ujjwal.png",  
   }
 ];
 
