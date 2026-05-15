@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 
-type Category = "All" | "Conferences" |  "Corporate" | "Associations" ;
+type Category = "All" |  "Corporate" | "Associations" ;
 
 interface PortfolioItem {
   id: number;
@@ -270,7 +270,7 @@ export default function PortfolioGallery() {
   }
 ];
 
-  const categories: Category[] = ["All", "Conferences",  "Corporate", "Associations"];
+  const categories: Category[] = ["All",   "Corporate", "Associations"];
 
   const filteredItems = selectedCategory === "All"
     ? portfolioItems
