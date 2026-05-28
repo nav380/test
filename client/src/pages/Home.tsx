@@ -38,6 +38,13 @@ import ClientLogos from "@/components/ClientLogos";
 import PortfolioGallery from "@/components/PortfolioGallery";
 import ServicesFlipCards from "@/components/ServicesFlipCards";
 import CountUp from "@/components/CountUp";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 /* ── Colour tokens ─────────────────────────────────────────── */
 const C = {
@@ -576,18 +583,63 @@ export default function Home() {
             {/* Brand */}
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div
-                  className="w-auto h-24 rounded-lg flex items-center justify-center font-bold text-xl text-white"
-
-                >
-                  <img src="/images/mike/MIKE Logo.png" alt="MIKE Events" className="w-full h-full object-contain scale-90" />
+                <div className="w-auto h-24 rounded-lg flex items-center justify-center font-bold text-xl text-white">
+                  <img
+                    src="/images/mike/MIKE Logo.png"
+                    alt="MIKE Events"
+                    className="w-full h-full object-contain scale-90"
+                  />
                 </div>
-
               </div>
-              <p className="text-sm leading-relaxed" style={{ color: "#9ca3af" }}>
-                India's premier MICE &amp; event management company delivering extraordinary
-                experiences since 2015.
+
+              <p
+                className="text-sm leading-relaxed mb-5"
+                style={{ color: "#9ca3af" }}
+              >
+                India's premier MICE &amp; event management company delivering
+                extraordinary experiences since 2015.
               </p>
+
+              {/* Social Media Icons */}
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.facebook.com/mikeconferences"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-all duration-300"
+                >
+                  <FaFacebookF size={16} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/mike_hospitality/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-pink-400 hover:border-pink-400 transition-all duration-300"
+                >
+                  <FaInstagram size={16} />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/mike-events-pvt-ltd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:border-blue-400 transition-all duration-300"
+                >
+                  <FaLinkedinIn size={16} />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@MIKEEVENTS2015"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-red-500 hover:border-red-500 transition-all duration-300"
+                >
+                  <FaYoutube size={16} />
+                </a>
+
+              
+              </div>
             </div>
 
             {/* Quick Links */}
