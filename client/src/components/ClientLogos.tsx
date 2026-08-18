@@ -51,6 +51,8 @@ export default function ClientLogos() {
   {name:"LUPIN" ,logo:"/images/sponsors/43.png"},
   {name:"LUPIN" ,logo:"/images/sponsors/44.png"},
   {name:"LUPIN" ,logo:"/images/sponsors/45.png"},
+{name:"Fleet Management Limited", logo:"/images/sponsors/IMG-20260818-WA0006.jpg"},
+{name:"Chartered Accountant", logo:"/images/sponsors/IMG-20260818-WA0007.jpg"},
 
 
     
